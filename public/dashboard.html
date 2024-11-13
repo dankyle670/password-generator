@@ -4,31 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dashboard - Password Manager</title>
-  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="css/dashboard.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Welcome to Your Password Dashboard</h1>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Menu</h2>
       <nav>
-        <a href="home.html">Home</a>
+        <a href="#" id="dashboard-link" class="active">Dashboard</a>
+        <a href="#">Generate Password</a>
+        <a href="#">Saved Passwords</a>
+        <a href="#">Settings</a>
         <a href="logout.html">Logout</a>
       </nav>
-    </header>
+    </aside>
 
-    <section class="generate-password">
-      <h2>Generate a New Password</h2>
-      <button id="generate-btn">Generate Password</button>
-      <p id="generated-password" class="generated-password"></p>
-      <button id="save-btn" class="hidden">Save Password</button>
-    </section>
+    <!-- Main Content Area -->
+    <main class="main-content">
+      <header>
+        <h1>Password Dashboard</h1>
+      </header>
 
-    <section class="password-list">
-      <h2>Your Saved Passwords</h2>
-      <ul id="password-list"></ul>
-    </section>
+      <!-- Password Generation Section -->
+      <section class="generate-password">
+        <h2>Generate a New Password</h2>
+        <button id="generate-btn">Generate Password</button>
+        <p id="generated-password" class="generated-password"></p>
+        <button id="save-btn" class="hidden">Save Password</button>
+      </section>
+
+      <!-- Saved Passwords Section -->
+      <section class="password-list">
+        <h2>Your Saved Passwords</h2>
+        <ul id="password-list"></ul>
+      </section>
+    </main>
   </div>
 
-  <script src="dashboard.js"></script>
+  <script src="script/dashboard.js"></script>
 </body>
 </html>
