@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <h1>Sign Up</h1>
-        <form action="/dashboard.html" method="post">
+        <form id="signup-form">
             <div class="form-group">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" required>
@@ -25,6 +25,9 @@
             <button type="submit">Sign Up</button>
         </form>
         <p>Already have an account? <a href="login.html">Log In</a></p>
+        <div id="response-message" class="hidden"></div>
     </div>
+
+    <script src="script/signup.js"></script>
 </body>
 </html>

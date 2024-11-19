@@ -4,13 +4,13 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   body, html {
     height: 100%;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9; /* Same background color as login */
   }
-  
+
   /* Center the dashboard container */
   .dashboard-container {
     background: linear-gradient(120deg, #3498db, #8e44ad);
@@ -20,7 +20,7 @@
     align-items: center;
     padding: 20px; /* Optional padding for spacing */
   }
-  
+
   /* Sidebar styles */
   .sidebar {
     background-color: #333;
