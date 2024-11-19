@@ -7,7 +7,7 @@ document.getElementById('signup-form').addEventListener('submit', async function
     const password = document.getElementById('password').value;
 
     try {
-        const response = await fetch('https://password-generator-back.netlify.app/api/users', {
+        const response = await fetch('https://password-generator-back.netlify.app/api/user', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
